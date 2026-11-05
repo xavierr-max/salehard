@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { ArrowUpRight, ChevronDown, MessageCircle, Search, ShieldCheck, SlidersHorizontal, X } from 'lucide-react';
 import './styles.css';
 import './overrides.css';
+import './status.css';
 
 type Stock = 'Indisponível';
 type Product = { id: string; name: string; category: string; price: number; description: string; specs: string[]; stock: Stock; accent: string; image: string; tag?: string };
