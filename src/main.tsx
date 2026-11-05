@@ -4,12 +4,12 @@ import { ArrowUpRight, ChevronDown, MessageCircle, Search, ShieldCheck, SlidersH
 import './styles.css';
 import './overrides.css';
 
-type Stock = 'Disponível';
+type Stock = 'Indisponível';
 type Product = { id: string; name: string; category: string; price: number; description: string; specs: string[]; stock: Stock; accent: string; image: string; tag?: string };
 
 export const products: Product[] = [
-  { id: 'kit-amd', name: 'Kit AMD Ryzen 5 5500 + Cooler Hawin VC-120', category: 'Processador + Cooler', price: 529, description: 'Kit com processador AMD Ryzen 5 5500 e cooler Hawin VC-120.', specs: ['6 núcleos e 12 threads', '3.6GHz até 4.2GHz Turbo', 'Cache 19MB', 'Socket AM4', 'Garantia de 12 meses'], stock: 'Disponível', accent: '#111111', image: '/kit-amd.png', tag: 'Anúncio' },
-  { id: 'placa-mae-maxsun', name: 'Placa-mãe Maxsun Challenger A520M-K', category: 'Placa-mãe', price: 399, description: 'Placa-mãe Maxsun Challenger A520M-K para processadores AMD Ryzen.', specs: ['Socket AMD AM4', 'Chipset AMD A520', 'Memória DDR4 até 64GB', 'Formato M-ATX', 'Garantia de 12 meses'], stock: 'Disponível', accent: '#111111', image: '/placa-mae-maxsun.png', tag: 'Anúncio' },
+  { id: 'kit-amd', name: 'Kit AMD Ryzen 5 5500 + Cooler Hawin VC-120', category: 'Processador + Cooler', price: 529, description: 'Kit com processador AMD Ryzen 5 5500 e cooler Hawin VC-120.', specs: ['6 núcleos e 12 threads', '3.6GHz até 4.2GHz Turbo', 'Cache 19MB', 'Socket AM4', 'Garantia de 12 meses'], stock: 'Indisponível', accent: '#111111', image: '/kit-amd.png', tag: 'Anúncio' },
+  { id: 'placa-mae-maxsun', name: 'Placa-mãe Maxsun Challenger A520M-K', category: 'Placa-mãe', price: 399, description: 'Placa-mãe Maxsun Challenger A520M-K para processadores AMD Ryzen.', specs: ['Socket AMD AM4', 'Chipset AMD A520', 'Memória DDR4 até 64GB', 'Formato M-ATX', 'Garantia de 12 meses'], stock: 'Indisponível', accent: '#111111', image: '/placa-mae-maxsun.png', tag: 'Anúncio' },
 ];
 
 const money = (value: number) => value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
