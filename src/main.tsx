@@ -4,6 +4,7 @@ import { ArrowUpRight, ChevronDown, MessageCircle, Search, ShieldCheck, SlidersH
 import './styles.css';
 import './overrides.css';
 import './status.css';
+import './mobile.css';
 
 type Stock = 'Disponível' | 'Indisponível';
 type Product = { id: string; name: string; category: string; price: number; description: string; specs: string[]; stock: Stock; accent: string; image: string; tag?: string };
