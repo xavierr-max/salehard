@@ -1,2 +1,3 @@
 .card .stock,.modal .stock{color:#ef4444!important;animation:none!important}
 .card .stock i,.modal .stock i{background:#ef4444!important;box-shadow:none!important;animation:none!important}
+.button.unavailable{background:#252529;color:#777;border-color:#3a3a40;cursor:not-allowed}
